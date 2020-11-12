@@ -15,10 +15,10 @@ def consolidate_cart(cart)
   c = 0
   
   cart.each { |element|
-    if !ans[element]
+    if !ans[c]
       ans[c] = element
       ans[c][:count] = 1
-    else    
+    #else    
       element.each { |key, value|
         #puts key
         if key == :item
