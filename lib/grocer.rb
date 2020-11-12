@@ -21,11 +21,11 @@ def consolidate_cart(cart)
   cart.map { |element|
     puts element
     
-    if !element
+    if !re_array[element]
       re_array.push(element)
-    element.push(:)
-    else
-      
+      element.push(:count => 1)
+    elsif 
+      element[:count] += 1
     end
   }
   puts re_array
