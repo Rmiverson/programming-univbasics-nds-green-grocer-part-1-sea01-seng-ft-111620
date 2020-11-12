@@ -21,7 +21,7 @@ def consolidate_cart(cart)
     end    
     element.each { |key, value|
 
-      #binding.pry
+      binding.pry
 
     }
     c += 1
