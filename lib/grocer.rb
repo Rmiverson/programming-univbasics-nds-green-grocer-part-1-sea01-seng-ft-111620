@@ -23,7 +23,7 @@ def consolidate_cart(cart)
         if key == :item
           ans.each { |a_element|
             if a_element[:item] == value
-              a_element[:count] += 1
+              ans[c][:count] += 1
             end
           }
         end
