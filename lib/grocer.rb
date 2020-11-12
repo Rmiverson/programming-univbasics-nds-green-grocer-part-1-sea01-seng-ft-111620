@@ -21,10 +21,7 @@ def consolidate_cart(cart)
   
   cart.each { |element|
     element.each { |key, value|
-      #if key != :count
-        #ans.push(element)
-        #ans[c][:count] = 1
-      #end
+
     }
     #c += 1
   }
