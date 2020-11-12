@@ -19,8 +19,8 @@ def consolidate_cart(cart)
   ans = Array.new
   c = 0
   
-  cart.map { |element|
-    element.map { |key, value|
+  cart.each { |element|
+    element.each { |key, value|
       if key != :count
         ans.push(element)
         ans[c][:count] = 1
