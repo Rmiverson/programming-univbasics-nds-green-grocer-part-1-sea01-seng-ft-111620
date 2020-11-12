@@ -27,7 +27,6 @@ def consolidate_cart(cart)
       ans[c][:count] += 1
     end
     
-    
     c += 1
   }
   puts ans
