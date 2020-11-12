@@ -16,22 +16,22 @@ def consolidate_cart(cart)
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
   
-  re_array = Array.new
+  ans = Array.new
   c = 0
   
   cart.map { |element|
     element.map { |key, value|
       if key != :count
-        re_array.push(element)
-        re_array[c][:count] = 1
-      elsif re_array[c][:item] == element[:item]
-        re_array[c][:count] += 1
+        ans.push(element)
+        ans[c][:count] = 1
+      elsif ans[c][:item] == element[:item]
+        ans[c][:count] += 1
       end
     }
     c += 1
   }
-  puts re_array
-  return re_array
+  puts ans
+  return ans
 end
 
 
