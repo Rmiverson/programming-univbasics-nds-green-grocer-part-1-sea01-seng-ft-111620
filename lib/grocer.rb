@@ -24,7 +24,7 @@ def consolidate_cart(cart)
     element.map { |key, value|
       puts key.to_s + " " + value.to_s
       
-      re_array[count].push({key, value})
+      re_array[count].push({key => value})
       
     }
     count += 1
