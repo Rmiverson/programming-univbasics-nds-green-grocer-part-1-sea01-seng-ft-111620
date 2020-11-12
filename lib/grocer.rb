@@ -22,14 +22,14 @@ def consolidate_cart(cart)
   cart.map { |element|
     element.map { |key, value|
       if key != :count
-      
+            re_array.push(element)
+      re_array[c][:count] = 1
       
     }
     
     
     if !re_array[c]
-      re_array.push(element)
-      re_array[c][:count] = 1
+
     end
     c += 1
   }
