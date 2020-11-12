@@ -27,8 +27,8 @@ def consolidate_cart(cart)
     if !re_array[c]
       re_array.push(element)
       re_array[c][:count] = 1
-    elsif re_array[c][:count]
-      re_array[c][:count] += 1
+    #elsif re_array[c][:count]
+      #re_array[c][:count] += 1
     end
     c += 1
   }
