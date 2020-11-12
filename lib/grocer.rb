@@ -19,7 +19,8 @@ def consolidate_cart(cart)
       if !ans[c]
         ans[c] = { }
       end
-      ans[c][key] = value  
+      ans[c][key] = value
+      ans[c][:count] = 1
     }
     c += 1
   }
