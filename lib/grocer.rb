@@ -23,7 +23,7 @@ def consolidate_cart(cart)
       if key == :count
         ans[c][:count] += 1
       else
-        ans[c][:count] = 1
+        ans[c] << :count
       end
     }
     c += 1
