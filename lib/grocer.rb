@@ -21,7 +21,7 @@ def consolidate_cart(cart)
   
   cart.map { |element|
   
-    if !re_array[c] && re_array[element].any?(:count)
+    if !re_array[c] && re_array[c].any?(:count)
       re_array.push(element)
       re_array[c][:count] = 1
     end
