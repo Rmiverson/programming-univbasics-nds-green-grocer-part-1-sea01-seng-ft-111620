@@ -22,10 +22,8 @@ def consolidate_cart(cart)
   cart.each { |element|
     element.each { |key, value|
       if key != :count
-        ans.push(element)
-        ans[c][:count] = 1
-      elsif ans[c][:item] == element[:item]
-        #ans[c][:count] += 1
+        ans.push(element[:count])
+        #ans.push
       end
     }
     c += 1
