@@ -25,10 +25,10 @@ def consolidate_cart(cart)
         ans[c] = element
       end
       
-      if ans[element][key] == :count
-        ans[element][:count] += 1
+      if ans[c][key] == :count
+        ans[c][:count] += 1
       else
-        ans[element][:count] = 1
+        ans[c][:count] = 1
       end
     }
     c += 1
