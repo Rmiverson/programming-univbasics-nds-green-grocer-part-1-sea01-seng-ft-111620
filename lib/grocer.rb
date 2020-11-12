@@ -20,9 +20,9 @@ def consolidate_cart(cart)
     end  
     element.each { |key, value|
       ans[c][key] = value
-      
+      if key == :count
     }
-    ans[c].store(:count, 1)
+    ans[c][:count] = 1
     c += 1
   }
   puts ans
