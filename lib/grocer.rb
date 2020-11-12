@@ -28,6 +28,7 @@ def consolidate_cart(cart)
         }
       end
     }
+    binding.pry
     c += 1
   }
   puts cart
