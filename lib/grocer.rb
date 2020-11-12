@@ -29,7 +29,7 @@ def consolidate_cart(cart)
         end
       }
     end
-    binding.pry
+    #binding.pry
     c += 1
   }
   puts ans
