@@ -18,12 +18,10 @@ def consolidate_cart(cart)
     if !ans[c]
       ans[c] = element
       ans[c][:count] = 1
-    #else    
+    else    
       element.each { |key, value|
-        #puts key
         if key == :item
           ans.each { |a_element|
-            #puts a_element
             if a_element[:item] == value
               a_element[:count] += 1
             end
@@ -31,7 +29,7 @@ def consolidate_cart(cart)
         end
       }
     end
-    #binding.pry
+    binding.pry
     c += 1
   }
   puts ans
