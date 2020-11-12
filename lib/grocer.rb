@@ -21,9 +21,9 @@ def consolidate_cart(cart)
   
   cart.each { |element|
     element.each { |key, value|
-
+      if ans
     }
-    #c += 1
+    c += 1
   }
   puts cart
   puts ans
