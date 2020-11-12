@@ -20,13 +20,14 @@ def consolidate_cart(cart)
   
   cart.map { |element|
     puts element
+    c += 1
     
-    if !re_array[element]
+    if !re_array[c]
       re_array.push(element)
       element.push(:count => 1)
     end
   }
-  binding.pry
+
   puts re_array
   return re_array
 end
