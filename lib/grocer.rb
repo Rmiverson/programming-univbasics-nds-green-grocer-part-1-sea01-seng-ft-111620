@@ -20,6 +20,7 @@ def consolidate_cart(cart)
       ans[c][:count] = 1
     end    
     element.each { |key, value|
+      puts key
       if key == :item
         ans.each { |a_element|
           if a_element[:item] == key
