@@ -24,8 +24,6 @@ def consolidate_cart(cart)
     if !re_array[element]
       re_array.push(element)
       element.push(:count => 1)
-    else
-      
     end
   }
   puts re_array
