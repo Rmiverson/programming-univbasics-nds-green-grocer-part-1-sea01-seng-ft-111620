@@ -21,7 +21,7 @@ def consolidate_cart(cart)
   c = 0
   
   cart.map { |element|
-    puts element
+    #puts element
     
     
     if !re_array[c]
