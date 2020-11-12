@@ -24,7 +24,7 @@ def consolidate_cart(cart)
     #puts element
     
     
-    if !re_array[c] && !re_array[c][:count]
+    if !re_array[c]
       re_array.push(element)
       re_array[c][:count] = 1
     elsif re_array[c][:count]
