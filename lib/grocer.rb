@@ -24,14 +24,16 @@ def consolidate_cart(cart)
     #puts element
     
     
-    if !re_array[c]
+    if !re_array[c] #&& !re_array[c][:count]
       re_array.push(element)
       element[:count] = 1
+    #elsif re_array[c][:count]
+      #element
     end
     c += 1
   }
 
-  puts re_array
+  #puts re_array
   return re_array
 end
 
