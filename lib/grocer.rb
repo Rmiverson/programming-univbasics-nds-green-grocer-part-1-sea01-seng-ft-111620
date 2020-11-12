@@ -21,7 +21,7 @@ def consolidate_cart(cart)
   cart.map { |element|
     puts element
     element.map { |key, value|
-      puts key.to_s + value.to_s
+      puts key.to_s + " " + value.to_s
       
     }
     
