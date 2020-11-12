@@ -23,9 +23,9 @@ def consolidate_cart(cart)
     
     if !element
       re_array.push(element)
-    
+    element.push(:)
     else
-      element.push(:)
+      
     end
   }
   puts re_array
