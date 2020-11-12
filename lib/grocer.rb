@@ -17,9 +17,7 @@ def consolidate_cart(cart)
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
   
   re_array = Array.new
-  
   c = 0
-  
   cart.map { |element|
     #puts element
     
@@ -27,8 +25,6 @@ def consolidate_cart(cart)
     if !re_array[c]
       re_array.push(element)
       re_array[c][:count] = 1
-    #elsif re_array[c][:count]
-      #re_array[c][:count] += 1
     end
     c += 1
   }
