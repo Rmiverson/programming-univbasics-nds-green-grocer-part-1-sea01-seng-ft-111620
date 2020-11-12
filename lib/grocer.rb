@@ -1,4 +1,3 @@
-require 'pry'
 def find_item_by_name_in_collection(name, collection)
   collection.map{ |element|
     element.map { |key, value|
