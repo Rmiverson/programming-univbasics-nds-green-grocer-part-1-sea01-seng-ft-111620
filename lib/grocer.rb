@@ -15,11 +15,10 @@ def consolidate_cart(cart)
   c = 0
   
   cart.each { |element|
-  
+    if !ans[c]
+      ans[c] = { }
+    end  
     element.each { |key, value|
-      if !ans[c]
-        ans[c] = { }
-      end
       ans[c][key] = value
       ans[c].store(:count, 1)
     }
