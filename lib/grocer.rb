@@ -20,10 +20,15 @@ def consolidate_cart(cart)
       ans[c][:count] = 1
     end    
     element.each { |key, value|
-
-      
-
-    }binding.pry
+      if key == :item
+        ans.each { |a_element|
+          if a_element[:item] == key
+            a_element[count] += 1
+          end
+        }
+      end
+    }
+    binding.pry
     c += 1
   }
   puts cart
