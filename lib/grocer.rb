@@ -15,19 +15,8 @@ def consolidate_cart(cart)
   c = 0
   
   cart.each { |element|
-    if !ans[c]
-      ans[c] = element
-      ans[c][:count] = 1
-    else 
-      #puts"else"
-      element.each { |key, value|
-        if key == :item
-          #puts "true"
-          ans.each { |a_element|
-            if a_element[:item] == value
-              puts "true"
-              ans[c][:count] += 1
-            end
+    element.each { |key, value|
+        
           }
         end
       }
