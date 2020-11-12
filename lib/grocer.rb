@@ -20,14 +20,13 @@ def consolidate_cart(cart)
   
   cart.map { |element|
     puts element
-    count = 0
-    element.map { |key, value|
-      puts key.to_s + " " + value.to_s
-      
-      re_array[count].push({key => value})
-      
-    }
-    count += 1
+    
+    if !element
+      re_array.push(element)
+    
+    else
+      element.push(:)
+    end
   }
   puts re_array
   return re_array
