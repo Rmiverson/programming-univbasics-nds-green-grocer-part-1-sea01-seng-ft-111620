@@ -20,7 +20,7 @@ def consolidate_cart(cart)
         ans[c] = { }
       end
       ans[c][key] = value
-      ans[c][:count] = 1
+      ans[c].store(:count, 1)
     }
     c += 1
   }
