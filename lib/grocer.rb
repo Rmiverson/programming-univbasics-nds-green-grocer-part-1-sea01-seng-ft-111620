@@ -20,7 +20,7 @@ def consolidate_cart(cart)
         ans[c] = element
       end
       binding.pry
-      if element[key] == :count
+      if key == :count
         ans[c][:count] += 1
       else
         ans[c][:count] = 1
