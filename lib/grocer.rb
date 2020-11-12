@@ -29,6 +29,7 @@ def consolidate_cart(cart)
     }
     count += 1
   }
+  puts re_array
   return re_array
 end
 
