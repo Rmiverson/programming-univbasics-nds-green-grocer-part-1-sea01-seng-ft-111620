@@ -23,7 +23,7 @@ def consolidate_cart(cart)
     element.map { |key, value|
       if key != :count
         ans.push(element)
-        #ans[c][:count] = 1
+        ans[c][:count] = 1
       elsif ans[c][:item] == element[:item]
         #ans[c][:count] += 1
       end
