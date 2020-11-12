@@ -32,8 +32,8 @@ def consolidate_cart(cart)
     #binding.pry
     c += 1
   }
-  puts cart
-  puts ans
+  #puts cart
+  #puts ans
   return ans
 end
 
