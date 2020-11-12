@@ -23,6 +23,9 @@ def consolidate_cart(cart)
     element.map { |key, value|
       puts key.to_s + " " + value.to_s
       
+      if !re_array
+        
+      end
     }
     
   }
