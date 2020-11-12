@@ -28,6 +28,7 @@ def consolidate_cart(cart)
     }
     #c += 1
   }
+  puts cart
   puts ans
   return ans
 end
