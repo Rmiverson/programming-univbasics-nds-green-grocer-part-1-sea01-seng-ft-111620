@@ -16,12 +16,8 @@ def consolidate_cart(cart)
   
   cart.each { |element|
     element.each { |key, value|
-        
-          }
-        end
-      }
-    end
-    #binding.pry
+       ans[0][key] = value 
+    }
     c += 1
   }
   puts ans
