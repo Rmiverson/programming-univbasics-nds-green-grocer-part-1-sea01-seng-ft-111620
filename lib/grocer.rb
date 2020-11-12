@@ -22,7 +22,7 @@ def consolidate_cart(cart)
       #puts"else"
       element.each { |key, value|
         if key == :item
-          puts "true"
+          #puts "true"
           ans.each { |a_element|
             if a_element[:item] == value
               puts "true"
