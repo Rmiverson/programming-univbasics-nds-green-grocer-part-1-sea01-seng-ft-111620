@@ -18,7 +18,7 @@ def consolidate_cart(cart)
     if !ans[c]
       ans[c] = element
       ans[c][:count] = 1
-    #else 
+    else 
       #puts"else"
       element.each { |key, value|
         if key == :item
