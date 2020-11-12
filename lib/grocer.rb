@@ -16,7 +16,9 @@ def consolidate_cart(cart)
   
   cart.each { |element|
     element.each { |key, value|
-
+      if !ans[c]
+        ans[c] = { }
+      end
       ans[c][key] = value  
     }
     c += 1
