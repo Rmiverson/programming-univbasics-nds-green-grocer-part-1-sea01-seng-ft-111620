@@ -18,6 +18,7 @@ def consolidate_cart(cart)
   
   re_array = Array.new
   c = 0
+  puts cart
   cart.map { |element|
     #puts element
     
@@ -28,8 +29,8 @@ def consolidate_cart(cart)
     end
     c += 1
   }
-  puts cart
-  puts re_array
+  #puts cart
+  #puts re_array
   return re_array
 end
 
