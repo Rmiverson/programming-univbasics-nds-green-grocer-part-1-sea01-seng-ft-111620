@@ -26,6 +26,7 @@ def consolidate_cart(cart)
       element.push(:count => 1)
     end
   }
+  binding.pry
   puts re_array
   return re_array
 end
